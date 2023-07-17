@@ -1,0 +1,78 @@
+
+/*=============================================
+=    Tailwind CSS Default Configuration      =
+=============================================*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=====  End of Tailwind CSS Default Configuration  ======*/
+
+
+/*=============================================
+=          Preset CSS Start from Here      =
+=============================================*/
+
+.hero__Section{
+    background-image: url('../images/1.png');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero__Section::after{
+    position: absolute;
+    background-image: url('../images/2.png');
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    @apply md:text-center md:text-[40px]  lg:text-[65px] md:leading-[65px] lg:leading-[70px] font-bold sm:text-center sm:text-[36px] sm:leading-tight text-white;
+}
+
+.secondary__Heading{
+    @apply text-black text-center font-inter md:text-[40px] sm:text-[30px] font-semibold
+}
+
+.primary__Btn{
+    @apply bg-primary px-[16px] py-[8px] text-ligntWhite rounded-[5px] shadow-sm 
+    font-semibold
+    box-border
+    hover:text-primary
+    hover:bg-ligntWhite
+    transition-all
+    duration-300
+    hover:border-[1px]
+    hover:border-primary
+    z-50
+}
+
+.secondary__Btn{
+    @apply text-textColor flex justify-start items-center gap-2
+}
+
+.paragraph__Text{
+    @apply text-textColor md:text-[14px] w-[80%] font-poppins font-normal py-3 leading-relaxed sm:text-[12px]
+
+}
+.reactangle_Box{
+    @apply h-[100px] rounded-sm bg-ligntWhite hover:border-primary  hover:border-[1px] hover:bg-secondary flex justify-center items-center cursor-pointer text-gray text-center hover:text-primary transition ease-in-out transform-cpu duration-500 box-border !w-[100%]
+}
+
+.reactangle_Box__heading{
+    @apply text-[25px] font-medium 
+}
+
+.plan__box__container{
+    @apply p-10 cursor-text
+}
+
+
+
+
